@@ -13,35 +13,31 @@ struct PayRoll{
 };
 
 void employees(){
-        PayRoll employee;
-        char Y;
-    
-    cout<<setw(60)<<"Do you want to use the Employee GrossPay Calculator: "<<endl;
-    cin>>Y;
-while(Y == 'Y') { 
+        PayRoll employee; 
+    cout<<endl;
     cout<<setw(50)<<"Welcome to NYOKONG SUPERMARKET"<<endl;
     cout<<endl;
 
 
     cout<<"Enter the employee name: ";
     cin>>employee.empName;
-    cout<<endl;
+    
 
     cout<<"Enter the employee number: ";
     cin>>employee.emPNumber;
-    cout<<endl;
+    
 
     cout<<"What is the employees's position: ";
     cin>>employee.empPosition;
-    cout<<endl;
+    
 
     cout<<"How many hours did the employee work: ";
     cin>>employee.hours;
-    cout<<endl;
+    
 
     cout<<"What was the employee's hourly rate: ";
     cin>>employee.payRate;
-    cout<<endl;
+    
 
     employee.GrossPay= employee.hours*employee.payRate;
 
@@ -59,7 +55,7 @@ while(Y == 'Y') {
     cout<<"Employee's Gross Pay is: "<<" R "<<employee.GrossPay<<endl;
     
 }
-}
+
 
 int main(){
     
